@@ -1,0 +1,143 @@
+* {
+  font-family: "Roboto";
+  font-weight: 300;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-image: linear-gradient(
+    rgba(10, 15, 20, 0.85),
+    rgba(10, 15, 20, 0.85)
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  color: #f8f8ff;
+}
+
+.links {
+  min-width: 35%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  opacity: 0.7;
+  transition: 0.2s;
+  padding: 20px;
+  color: #f8f8ff;
+}
+
+a:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.logo {
+  font-family: "Caveat";
+  text-align: center;
+  font-size: 26px;
+  padding: 20px;
+  color: #f8f8ff;
+}
+
+.border {
+  border: 1px solid aqua;
+}
+
+.hamburger {
+  display: none;
+  z-index: 2;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 15, 20, 0.95);
+  z-index: 1.9;
+}
+
+.menu a {
+  font-weight: 400;
+  color: white;
+  opacity: 0.90;
+}
+
+.none {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn ease 0.3s;
+  -webkit-animation: fadeIn ease 0.3s;
+  -moz-animation: fadeIn ease 0.3s;
+  -o-animation: fadeIn ease 0.3s;
+  -ms-animation: fadeIn ease 0.3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 20px;
+  }
+}

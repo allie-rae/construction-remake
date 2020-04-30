@@ -1,0 +1,69 @@
+.jumbo-container {
+  background-image: url("wood-boards-min.jpg");
+  background-size: cover;
+}
+
+.jumbo {
+  padding: 65px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    rgba(10, 15, 20, 0.75),
+    rgba(10, 15, 20, 0.75)
+  );
+}
+
+.jumbo-container h1 {
+  font-family: "Caveat";
+  font-size: 3rem;
+  color: #f8f8ff;
+}
+
+.jumbo-container .center-text {
+  text-align: center;
+}
+
+.jumbo-container .header2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3%;
+  width: 50%;
+  color: #f8f8ff;
+}
+
+.jumbo-container button {
+  color: #f8f8ff;
+  padding: 12px 24px;
+  background-color: rgba(251, 70, 37, 0.3);
+  border: 3px solid rgba(251, 70, 37, 0.7);
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.jumbo-container button:hover {
+  background-color: rgba(251, 70, 37, 0.75);
+  border: 3px solid rgba(251, 70, 37, 0.6);
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 900px) {
+  .jumbo-container .header2 {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbo-container .header2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .jumbo {
+    padding: 20px;
+  }
+}
