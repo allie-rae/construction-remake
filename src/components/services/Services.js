@@ -15,7 +15,7 @@ const Services = () => {
           <div>
             <p>
               I can work with you to design the perfect deck and fence to bring
-              your yard to life! There's no time like the present to create a
+              your yard to life. There's no time like the present to create a
               beautiful outdoor space for your home.
             </p>
             <a href="#gallery">Gallery ></a>
