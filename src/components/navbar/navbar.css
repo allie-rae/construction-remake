@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto";
+  font-family: "Montserrat";
   font-weight: 300;
   text-decoration: none;
   box-sizing: border-box;
@@ -31,6 +31,7 @@ a {
   transition: 0.2s;
   padding: 20px;
   color: #f8f8ff;
+  font-weight: 300;
 }
 
 a:hover {
@@ -72,7 +73,7 @@ a:hover {
 .menu a {
   font-weight: 400;
   color: white;
-  opacity: 0.90;
+  opacity: 0.9;
 }
 
 .none {

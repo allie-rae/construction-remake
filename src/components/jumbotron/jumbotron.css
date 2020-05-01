@@ -33,6 +33,7 @@
   margin-bottom: 3%;
   width: 50%;
   color: #f8f8ff;
+  line-height: 1.5;
 }
 
 .jumbo-container button {
@@ -48,6 +49,10 @@
   background-color: rgba(251, 70, 37, 0.75);
   border: 3px solid rgba(251, 70, 37, 0.6);
   transition: 0.3s;
+}
+
+button a {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 900px) {

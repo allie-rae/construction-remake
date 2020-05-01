@@ -1,0 +1,88 @@
+.about-outer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fence {
+  background-image: url("../images/fence-2.jpg");
+  background-size: cover;
+}
+
+.ceiling {
+  background-image: url("../images/ceiling-min.jpg");
+  background-size: cover;
+}
+
+.furniture {
+  background-image: url("../images/rustic-table.jpg");
+  background-size: cover;
+}
+
+.large-inner {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .large-inner {
+    width: 100%;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+.large-inner > div {
+  background-color: none;
+  width: 60%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.image-background > div {
+  background-color: rgba(255, 255, 255, 0.85);
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 5%;
+}
+
+.large-inner > div > a {
+  text-decoration: underline;
+  color: black;
+  font-weight: 300;
+  padding: 0;
+}
+
+.large-inner > div {
+  font-weight: 200;
+  font-family: "Montserrat";
+  line-height: 1.5;
+}
+
+.image-background > div > hr {
+  width: 30%;
+  margin-top: 10px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
