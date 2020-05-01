@@ -27,7 +27,7 @@
   max-width: 100%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 820px) {
   .large-inner {
     width: 100%;
   }
@@ -45,6 +45,9 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  font-weight: 200;
+  font-family: "Montserrat";
+  line-height: 1.5;
 }
 
 .image-background > div {
@@ -59,12 +62,6 @@
   color: black;
   font-weight: 300;
   padding: 0;
-}
-
-.large-inner > div {
-  font-weight: 200;
-  font-family: "Montserrat";
-  line-height: 1.5;
 }
 
 .image-background > div > hr {
