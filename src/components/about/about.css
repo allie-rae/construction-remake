@@ -1,0 +1,46 @@
+.about-me-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 10px 100px 10px;
+}
+
+
+.about-img {
+    background-image: url("./jonathan_pic.jpg");
+    background-size: cover;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50% 20% / 10% 40%;
+    margin: 30px;
+}
+
+.about-txt {
+    margin: 30px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.about-txt > h2 {
+    font-family: "Caveat";
+    font-size: 2.5rem;
+}
+
+.about-txt > a {
+    color: rgba(251, 70, 37, 0.9);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+    .about-me-outer {
+        flex-direction: column;
+    }
+
+    .about-txt {
+        width: 80%;
+    }
+}

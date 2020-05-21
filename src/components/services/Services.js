@@ -1,10 +1,10 @@
 import React from "react";
 import "./services.css";
 
-const Services = () => {
+const Services = (props) => {
   return (
-    <main>
-      <div id="services" className="about-outer">
+    <main ref={props.servicesRef}>
+      <div id="services" className="about-outer" alt="services">
         <div className="image-background fence large-inner">
           <div>
             Decks & Fences
