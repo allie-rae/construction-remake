@@ -2,6 +2,16 @@ import React from "react";
 import "./services.css";
 
 const Services = (props) => {
+
+  const handleScroll = (event, refr) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: refr.offsetTop,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <main ref={props.servicesRef}>
       <div id="services" className="about-outer" alt="services">
@@ -18,7 +28,7 @@ const Services = (props) => {
               your yard to life. There's no time like the present to create a
               beautiful outdoor space for your home.
             </p>
-            <a href="#gallery">Gallery ></a>
+            <a href="#gallery" onClick={e => handleScroll(e, props.galleryRef.current)}>Gallery ></a>
           </div>
         </div>
       </div>
@@ -29,7 +39,7 @@ const Services = (props) => {
               Do you have a vision for your home? Let's make it happen. From
               doors to floors and trim to tile, we've got you covered.
             </p>
-            <a href="#gallery">Gallery ></a>
+            <a href="#gallery" onClick={e => handleScroll(e, props.galleryRef.current)}>Gallery ></a>
           </div>
         </div>
         <div className="image-background ceiling large-inner">
@@ -52,7 +62,7 @@ const Services = (props) => {
               Let's work together to design and materialize that perfect custom
               piece for your home.
             </p>
-            <a href="#gallery">Gallery ></a>
+            <a href="#gallery" onClick={e => handleScroll(e, props.galleryRef.current)}>Gallery ></a>
           </div>
         </div>
       </div>

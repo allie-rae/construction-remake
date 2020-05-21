@@ -50,6 +50,13 @@ const Navbar = (props) => {
             Contact
           </Link>
         </div>
+        <Switch>
+          <Route exact path="/home" component={Jumbotron} />
+          <Route exact path="/about" component={Services} />
+          <Route exact path="/services" component={Services} />
+          <Route exact path="/gallery" component={Services} />
+          <Route exact path="/contact" component={Services} />
+        </Switch>
         <div className="hamburger" onClick={menu}>
           <i className="fas fa-bars"></i>
           <i className="fas fa-times none"></i>

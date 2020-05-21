@@ -18,7 +18,7 @@ function App() {
       <Navbar servicesRef={servicesRef} aboutRef={aboutRef} homeRef={homeRef} contactRef={contactRef} galleryRef={galleryRef} />
       <Jumbotron />
       <About aboutRef={aboutRef} />
-      <Services servicesRef={servicesRef} />
+      <Services servicesRef={servicesRef} galleryRef={galleryRef} />
       <Gallery galleryRef={galleryRef} />
       <Contact contactRef={contactRef} />
     </div>

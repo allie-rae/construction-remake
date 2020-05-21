@@ -24,8 +24,6 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: relative;
-  z-index: 3;
 }
 
 a {
@@ -55,6 +53,7 @@ a:hover {
 
 .hamburger {
   display: none;
+  z-index: 2;
 }
 
 .menu {
@@ -68,7 +67,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   background-color: rgba(10, 15, 20, 0.95);
-  z-index: 3;
+  z-index: 1.9;
 }
 
 .menu a {
