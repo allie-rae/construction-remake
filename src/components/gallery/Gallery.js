@@ -10,76 +10,20 @@ import gallery_coffee_table_min from './gallery-coffee-table-min.jpg';
 import gallery_window_min from './gallery-window-min.jpg';
 
 const Gallery = (props) => {
+    const galleryImages = [[gallery_ramp_min, "Custom handrails"], [gallery_fence_min, "Beautiful custom cedar fencing"], [gallery_remodel_min, "Complete remodels"], [gallery_siding_min, "Beautiful wooden siding"], [gallery_beam_min, "Boxed beams"], [gallery_bedframe_min, "Unique custom bedframe with multicolor LED lights"], [gallery_coffee_table_min, "Rustic coffee table made with reclaimed wood"], [gallery_window_min, "Precise finish carpentry"]]
+
     return (
         <>
         <h2 className="gallery-header" ref={props.galleryRef}>Gallery</h2>
-<div className="gallery-container">
-    <div className="responsive">
-        <div className="gallery">
-            <a target="_blank" rel="noopener noreferrer" href={gallery_ramp_min}>
-                <img src={gallery_ramp_min} alt="Ramp" width="600" height="400" />
-            </a>
-            <div className="desc">Custom handrails</div>
+        <div className="gallery-wrapper">
+            {galleryImages.map(listImg => {
+                return (<div className="individual-img-wrapper">
+                <img src={listImg[0]} alt="Example of construction work" className="square" />
+                <div className="gallery-txt">{listImg[1]}</div>
+                </div>)
+            })}
         </div>
-    </div>
-    <div className="responsive">
-        <div className="gallery">
-            <a target="_blank" rel="noopener noreferrer" href={gallery_fence_min}>
-                <img src={gallery_fence_min} alt="Fence" width="600" height="400" />
-            </a>
-            <div className="desc">Beautiful custom cedar fencing</div>
-        </div>
-    </div>
-    <div className="responsive">
-        <div className="gallery">
-            <a target="_blank" rel="noopener noreferrer" href={gallery_remodel_min}>
-                <img src={gallery_remodel_min} alt="Ceiling remodel" width="600" height="400" />
-            </a>
-            <div className="desc">Complete remodels</div>
-        </div>
-    </div>
-    <div className="responsive">
-        <div className="gallery">
-            <a target="_blank" rel="noopener noreferrer" href={gallery_siding_min}>
-                <img src={gallery_siding_min} alt="Siding" width="600" height="400" />
-            </a>
-            <div className="desc">Beautiful wooden siding</div>
-        </div>
-    </div>
-    <div className="responsive">
-        <div className="gallery">
-            <a target="_blank" rel="noopener noreferrer" href={gallery_beam_min}>
-                <img src={gallery_beam_min} alt="Beam" width="600" height="400" />
-            </a>
-            <div className="desc">Boxed beams</div>
-        </div>
-    </div>
-    <div className="responsive">
-        <div className="gallery">
-            <a target="_blank" rel="noopener noreferrer" href={gallery_bedframe_min}>
-                <img src={gallery_bedframe_min} alt="Custom bedframe" width="600" height="400" />
-            </a>
-            <div className="desc">Unique custom bedframe with multicolor LED lights</div>
-        </div>
-    </div>
-    <div className="responsive">
-        <div className="gallery">
-            <a target="_blank" rel="noopener noreferrer" href={gallery_coffee_table_min}>
-                <img src={gallery_coffee_table_min} alt="Rustic coffee table" width="600" height="400" />
-            </a>
-            <div className="desc">Rustic coffee table made with reclaimed wood</div>
-        </div>
-    </div>
-    <div className="responsive">
-        <div className="gallery">
-            <a target="_blank" rel="noopener noreferrer" href={gallery_window_min}>
-                <img src={gallery_window_min} alt="Custom window" width="600" height="400" />
-            </a>
-            <div className="desc">Precise finish carpentry</div>
-        </div>
-    </div>
-</div>
-</>
+        </>
     )
 }
 
