@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.square {
+.square-img {
     height: 100%;
     width: 100%;
 }
@@ -17,6 +17,7 @@
 
 .gallery-txt {
     height: 50px;
+    margin: 10px;
 }
 
 .gallery-header {
@@ -26,8 +27,15 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .square {
+    .square-img {
         height: 80%;
         width: 80%;
+    }
+    .individual-img-wrapper {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

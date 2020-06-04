@@ -18,7 +18,7 @@ const Gallery = (props) => {
         <div className="gallery-wrapper">
             {galleryImages.map(listImg => {
                 return (<div className="individual-img-wrapper">
-                <img src={listImg[0]} alt="Example of construction work" className="square" />
+                <img src={listImg[0]} alt="Example of construction work" className="square-img" />
                 <div className="gallery-txt">{listImg[1]}</div>
                 </div>)
             })}
