@@ -14,7 +14,7 @@
 
 .white-wrapper-contact > a {
     text-decoration: underline;
-    color: black;
+    color: rgba(251,70,37,0.9);
     margin-top: 10px;
     font-weight: normal;
     padding: 0;
