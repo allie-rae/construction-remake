@@ -67,6 +67,10 @@ button a {
 }
 
 @media only screen and (max-width: 600px) {
+  .logo {
+    width: 100%;
+  }
+
   .jumbo-container .header2 {
     width: 100%;
     margin-bottom: 30px;
