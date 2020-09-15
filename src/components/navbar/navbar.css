@@ -27,6 +27,11 @@ nav {
   align-items: center;
 }
 
+.logo_sm {
+  height: 60px;
+  padding-left: 20px;
+}
+
 a {
   opacity: 0.7;
   transition: 0.2s;
@@ -38,14 +43,6 @@ a {
 a:hover {
   opacity: 1;
   transition: 0.2s;
-}
-
-.logo {
-  font-family: "Caveat";
-  text-align: center;
-  font-size: 26px;
-  padding: 20px;
-  color: #f8f8ff;
 }
 
 .border {

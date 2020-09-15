@@ -17,6 +17,10 @@
   );
 }
 
+.logo {
+  width: 50%;
+}
+
 .jumbo-container h1 {
   font-family: "Caveat";
   font-size: 3rem;

@@ -15,18 +15,22 @@ const Services = (props) => {
   return (
     <main ref={props.servicesRef}>
       <div id="services" className="about-outer" alt="services">
-        <div className="image-background fence large-inner">
+        <div className="image-background kitchen large-inner">
           <div>
-            Decks & Fences
+            Kitchens & Baths
             <hr />
           </div>
         </div>
         <div className="large-inner">
           <div>
             <p>
-              I can work with you to design the perfect deck and fence to bring
-              your yard to life. There's no time like the present to create a
-              beautiful outdoor space for your home.
+             <ul>
+               <li>Backsplashes</li>
+               <li>Countertops</li>
+               <li>Cabinet/shower/tub installation</li>
+               <li>Flooring</li>
+               <li>Tilework</li>
+             </ul>
             </p>
             <a href="#gallery" onClick={e => handleScroll(e, props.galleryRef.current)}>Gallery ></a>
           </div>
@@ -36,15 +40,20 @@ const Services = (props) => {
         <div className="large-inner">
           <div>
             <p>
-              Do you have a vision for your home? Let's make it happen. From
-              doors to floors and trim to tile, we've got you covered.
+              <ul>
+                <li>New Additions</li>
+                <li>Floorplan Design</li>
+                <li>Staircases/handrails</li>
+                <li>Drywall</li>
+                <li>Paint</li>
+              </ul>
             </p>
             <a href="#gallery" onClick={e => handleScroll(e, props.galleryRef.current)}>Gallery ></a>
           </div>
         </div>
         <div className="image-background ceiling large-inner">
           <div>
-            Interior Remodels
+            Interior Rennovation
             <hr />
           </div>
         </div>
@@ -52,17 +61,42 @@ const Services = (props) => {
       <div className="about-outer">
         <div className="image-background furniture large-inner">
           <div>
-            Custom Carpentry
+            Finish Carpentry
             <hr />
           </div>
         </div>
         <div className="large-inner">
           <div>
             <p>
-              Let's work together to design and materialize that perfect custom
-              piece for your home.
+              <ul>
+                <li>Trim</li>
+                <li>Baseboards</li>
+                <li>Crown Molding</li>
+              </ul>
             </p>
             <a href="#gallery" onClick={e => handleScroll(e, props.galleryRef.current)}>Gallery ></a>
+          </div>
+        </div>
+      </div>
+      <div className="about-outer reverse">
+        <div className="large-inner">
+          <div>
+            <p>
+              <ul>
+                <li>Decks/Stairs/Handrails</li>
+                <li>Fences</li>
+                <li>Cement Work</li>
+                <li>Wood/Vinyl/Fiberboard Siding</li>
+                <li>Paint</li>
+              </ul>
+            </p>
+            <a href="#gallery" onClick={e => handleScroll(e, props.galleryRef.current)}>Gallery ></a>
+          </div>
+        </div>
+        <div className="image-background fence large-inner">
+          <div>
+            Exterior Carpentry
+            <hr />
           </div>
         </div>
       </div>

@@ -1,19 +1,19 @@
 import React from "react";
 import "./jumbotron.css";
+import logo from '../images/white_logo.png';
 
 const Jumbotron = () => {
   return (
     <div className="jumbo-container">
       <div className="jumbo">
         <div className="center-text">
-          <h1>Jon's Carpentry</h1>
+          <img className="logo" src={logo} />
         </div>
         <div className="header2">
-          Build your dream home with the help of a trustworthy, local business.
-          I love to build what my clients need exactly the way they need it.
+          Tacoma, Puyallup, Seattle, and surrounding areas
         </div>
         <button>
-          <a href="mailto:jonrobinson90@live.com">Get a free quote</a>
+          <a href="mailto:info@jonthebuilderllc.com">Get a free quote</a>
         </button>
       </div>
     </div>

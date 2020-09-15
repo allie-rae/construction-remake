@@ -18,6 +18,11 @@
   background-size: cover;
 }
 
+.kitchen {
+  background-image: url("../images/kitchen.jpg");
+  background-size: cover;
+}
+
 .large-inner {
   width: 50%;
   height: 50vh;

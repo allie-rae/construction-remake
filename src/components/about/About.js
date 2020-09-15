@@ -8,8 +8,13 @@ const About = (props) => {
             <div className="about-txt">
                 <h2>Jon Robinson</h2>
                 <h3>Based in Tacoma, WA</h3>
-                I have years of experience updating, remodeling, and improving homes. I love helping people turn their dream home into reality.
-                <a href="mailto:jonrobinson90@live.com"><h3>Contact</h3></a>
+                Hi! Thanks for visiting my website. I love the Pacific Northwest and have spent my life
+developing roots here. My work brings me in contact with all kinds of people and all kinds of
+interesting work projects. At Jon the Builder, we love improving our neighbors’ lives by building with
+skill, precision, and integrity. Collectively, we have years of experience in the interior and exterior
+carpentry business and we pride ourselves on a job well done. If you have any questions about how we
+can help you, don’t hesitate to give us a call.
+                <a href="mailto:info@jonthebuilderllc.com"><button className="contact-btn">Contact</button></a>
                 </div>
         </div>
     )

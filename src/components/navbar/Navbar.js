@@ -3,6 +3,7 @@ import "./navbar.css";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import Jumbotron from "../jumbotron/Jumbotron";
 import Services from "../services/Services";
+import logo_sm from '../images/JTP_button.png';
 
 const Navbar = (props) => {
   const menu = (event) => {
@@ -25,7 +26,7 @@ const Navbar = (props) => {
   return (
     <BrowserRouter>
       <nav ref={props.homeRef}>
-        <div className="logo">Jon's Carpentry</div>
+        <img src={logo_sm} className="logo_sm" />
         <div className="links">
           <Link to="/home" onClick={e => handleScroll(e, props.homeRef.current)}>Home</Link>
           <Link to="/about" onClick={e => handleScroll(e, props.aboutRef.current)}>About</Link>
