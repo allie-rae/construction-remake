@@ -34,16 +34,16 @@
     color: black;
     padding: 6px 12px;
     background-color: rgba(251, 70, 37, 0.3);
-    border: 3px solid rgba(251, 70, 37, 0.7);
+    border: 1px solid rgba(251, 70, 37, 0.7);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 3px;
     display: block;
     margin-top: 15px;
   }
   
 .contact-btn:hover {
     background-color: rgba(251, 70, 37, 0.75);
-    border: 3px solid rgba(251, 70, 37, 0.6);
+    border: 1px solid rgba(251, 70, 37, 0.6);
     transition: 0.3s;
   }
 

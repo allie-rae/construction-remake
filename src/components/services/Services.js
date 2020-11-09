@@ -27,7 +27,7 @@ const Services = (props) => {
              <ul>
                <li>Backsplashes</li>
                <li>Countertops</li>
-               <li>Cabinet/shower/tub installation</li>
+               <li>Cabinet installation</li>
                <li>Flooring</li>
                <li>Tilework</li>
              </ul>
@@ -59,7 +59,7 @@ const Services = (props) => {
         </div>
       </div>
       <div className="about-outer">
-        <div className="image-background furniture large-inner">
+        <div className="image-background trim large-inner">
           <div>
             Finish Carpentry
             <hr />

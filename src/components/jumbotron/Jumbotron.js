@@ -13,7 +13,7 @@ const Jumbotron = () => {
           Tacoma, Puyallup, Seattle, and surrounding areas
         </div>
         <button>
-          <a href="mailto:info@jonthebuilderllc.com">Get a free quote</a>
+          <a href="mailto:jon@jonthebuilderllc.com">Get a free quote</a>
         </button>
       </div>
     </div>

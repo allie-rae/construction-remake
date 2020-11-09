@@ -4,7 +4,7 @@
 }
 
 .fence {
-  background-image: url("../images/fence-2.jpg");
+  background-image: url("../images/display_fence-min.jpeg");
   background-size: cover;
 }
 
@@ -13,8 +13,8 @@
   background-size: cover;
 }
 
-.furniture {
-  background-image: url("../images/rustic-table.jpg");
+.trim {
+  background-image: url("../images/display_trim-min.jpeg");
   background-size: cover;
 }
 
